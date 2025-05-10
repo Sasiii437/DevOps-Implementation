@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'eks-app-metrics'
+    kubernetes_sd_configs:
+      - role: pod
